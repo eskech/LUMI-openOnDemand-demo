@@ -13,6 +13,8 @@ set -euo pipefail
 
 SCRATCH="/scratch/project_465002745"
 VENV_DIR="${SCRATCH}/.venv"
+export HF_HOME="${SCRATCH}/hf_cache"
+export HF_HUB_DISABLE_XET=1   # XET chunked protocol is incompatible with Lustre
 
 echo "==> Creating virtual environment at ${VENV_DIR}"
 python3 -m venv "${VENV_DIR}"
