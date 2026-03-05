@@ -32,6 +32,7 @@ outputs/
 # HuggingFace cache
 .cache/
 huggingface/
+notebooks/hf_cache/
 
 # Data
 data/*.csv
