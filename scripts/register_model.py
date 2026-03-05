@@ -44,7 +44,7 @@ def register_qwen3_5_moe(model_id: str, hf_home: str) -> None:
         AutoConfig.for_model(model_type)
         print(f"[register_model] {model_type} already registered — skipping.")
         return
-    except KeyError:
+    except (KeyError, ValueError):
         pass
 
     # ── 2. Resolve class references ───────────────────────────────────────
