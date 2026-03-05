@@ -34,6 +34,9 @@ module load rocm/6.2.2
 
 ### 2. Install dependencies
 
+The install script places the virtual environment in
+`/scratch/project_465002745/.venv`.
+
 ```bash
 bash scripts/install_deps.sh
 ```

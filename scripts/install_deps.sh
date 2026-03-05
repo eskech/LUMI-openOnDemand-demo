@@ -11,7 +11,8 @@
 
 set -euo pipefail
 
-VENV_DIR="${PWD}/.venv"
+SCRATCH="/scratch/project_465002745"
+VENV_DIR="${SCRATCH}/.venv"
 
 echo "==> Creating virtual environment at ${VENV_DIR}"
 python3 -m venv "${VENV_DIR}"
