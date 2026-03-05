@@ -26,7 +26,7 @@ pip install torch torchvision torchaudio \
 
 echo "==> Installing project dependencies"
 pip install \
-    transformers>=4.50.0 \
+    transformers==4.52.4 \
     accelerate>=1.0.0 \
     peft>=0.13.0 \
     datasets>=3.0.0 \
